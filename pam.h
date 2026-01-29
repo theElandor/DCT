@@ -9,13 +9,12 @@ typedef uint8_t u8;
 #endif
 
 typedef struct Pam{
-  // PAM storing RGB image
   u32 w;
   u32 h;
   u32 d;
   u32 maxval;
   char type[20];
-  u8 *data; // R*C*3
+  u8 *data;
 } Pam;
 
 void pam_free(Pam *pam);
